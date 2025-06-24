@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Artist Search</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+<div class="title">Artist Search</div>
+<nav class="menuButton">
+    <button onclick="window.location.href='index.html'">Search</button>
+    <button id="loginButton" onclick="window.location.href='login.html'">Log In</button>
+    <button id="registerButton" onclick="window.location.href='register.html'">Register</button>
+    <button id="favoritesButton" class="hidden">Favorites</button>
+    <button id="signoutButton" class="hidden">Log Out</button>
+</nav>
+</header>
+  
+<!-- Main Content -->
+<main class="content">
+    <!-- Search Bar -->
+	<form id="searchForm">
+    <div class="searchBar">
+    	<img src="Images/search_icon.png" class="icon" id="searchIcon" alt="Search">
+    	<input type="text" id="searchInput" placeholder="Please enter an artist name." required>
+    	<img src="Images/clear_icon.png" class="icon" id="clearIcon" alt="clear">
+    </div>
+    </form>
+
+    <!-- Loading -->
+    <div id="loading" class="hidden">
+    	<img src="Images/loading.gif" alt="Loading...">
+    </div>
+
+    <!-- No Results -->
+    <div id="noResultsMessage" class="hidden">No results found.</div>
+
+    <!-- Search Results -->
+    <div id="resultsContainer" class="results"></div>
+
+    <!-- Artist Details -->
+    <div id="artistDetails" class="details hidden"></div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+	<a href="https://www.artsy.net/" target="_blank"> Powered by        
+		<img src="Images/artsy_logo.svg" alt="Artsy Logo" class="footer-logo">
+		Artsy.
+	</a>
+</footer>
+
+</body>
+</html>

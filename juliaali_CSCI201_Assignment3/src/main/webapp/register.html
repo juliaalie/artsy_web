@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Page</title>
+<link rel="stylesheet" href="style3.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+	<div class="title">Artist Search</div>
+    <nav class="menuButton">
+    	<button onclick="window.location.href='index.html'">Search</button>
+      	<button onclick="window.location.href='login.html'">Log In</button>
+      	<button onclick="window.location.href='register.html'">Register</button>
+    </nav>
+</header>
+
+<!-- Main (Search Bar) -->
+<main class="registerContent">
+	<div class="registerBox">
+    <h2>Register</h2>
+    <form id="registerForm" method="POST">
+    	<label>Full Name:</label><br>
+      	<div class="searchBar">
+			<input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+			<img src="Images/input_warning.png" class="warningIcon hidden" id="fullnameIcon" alt="!" />
+       	 	<p class="errorText hidden" id="fullnameError">Fullname is required</p>
+   	  	</div>
+      
+      	<label>Email:</label><br>
+      	<div class="searchBar">
+			<input type="email" id="email" name="email" placeholder="Enter Email" required>
+			<img src="Images/input_warning.png" class="warningIcon hidden" id="emailIcon" alt="!" />
+        	<p class="errorText hidden" id="emailError">Email must be valid</p>
+   	  	</div>
+      
+      	<label>Password:</label><br>
+      	<div class="searchBar">
+			<input type="password" id="password" name="password" placeholder="Password" required>
+			<img src="Images/input_warning.png" class="warningIcon hidden" id="passwordIcon" alt="!" />
+        	<p class="errorText hidden" id="passwordError">Password is required</p>
+   	  	</div>
+      
+	  	<p id="registerError" class="error hidden" style="color: red;"></p>
+      	<div class="submitButton">
+      		<button type="submit">Register</button>      
+   	  	</div>
+   	  
+    </form>
+    <p class="switchForm"> Already have an account? <a href="login.html">Log In.</a></p>
+    </div>
+</main>
+
+</body>
+</html>

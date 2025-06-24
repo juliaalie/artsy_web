@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* Global */
+body {
+  	margin: 0;
+  	font-family: Arial, sans-serif;
+  	background-color: white;
+  	color: #333;
+}
+
+.hidden {
+  	display: none;
+}
+
+a {
+  	text-decoration: none;
+  	color: inherit;
+}
+
+/* Header */
+.header {
+  	background-color: #f2f2f2;
+  	color: black;
+  	padding: 15px 25px;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+}
+
+.header .title {
+  	font-size: 20px;
+}
+
+.header .menuButton button {
+  	margin-left: 10px;
+  	padding: 8px 16px;
+  	background-color: #f2f2f2;
+  	color: #444;
+  	border: none;
+  	border-radius: 6px;
+  	cursor: pointer;
+}
+
+.header .menuButton button:hover {
+  	background-color: #205375;
+  	color: white;
+}
+
+/* Footer */
+.footer {
+  background-color: #205375;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+} 
+
+/* Main Content */
+.content {
+  	padding: 30px 20px;
+  	max-width: 1000px;
+  	margin: auto;
+}
+
+/* Search Bar */
+.searchBar {
+  	display: flex;
+  	align-items: center;
+ 	border: 2px solid #ccc;
+ 	border-radius: 50px;
+  	background-color: white;
+  	padding: 8px 12px;
+  	max-width: 600px;
+  	margin: 20px auto 20px auto;
+
+}
+
+.searchBar input {
+  	flex-grow: 1;
+  	border: none;
+  	outline: none;
+  	font-size: 16px;
+  	padding: 6px;
+  	background: transparent;
+  
+}
+
+.searchBar:focus-within {
+  	border-color: orange;
+}
+
+.icon {
+  	width: 20px;
+  	height: 20px;
+  	opacity: 0.5;
+  	cursor: pointer;
+  	margin: 0 6px;
+}
+
+.icon:hover {
+	opacity: 1;
+}
+
+/* Loading */
+#loading {
+ 	text-align: center;
+ 	margin-top: 20px;
+}
+
+#loading img {
+ 	width: 40px;
+}
+
+/* No Results */
+#noResultsMessage {
+ 	text-align: center;
+ 	color: #777;
+  	margin-top: 20px;
+  	font-style: italic;
+}
+
+/* Artist Cards */
+.results {
+  	display: flex;
+  	overflow-x: auto;
+  	padding: 10px 0;
+  	margin-top: 10px;
+  	gap: 10px;
+}
+
+.artistCard {
+  	min-width: 120px;
+  	background-color: #205375;
+  	color: white;
+  	text-align: center;
+  	padding: 10px;
+  	cursor: pointer;
+
+}
+
+.artistCard:hover {
+  	background-color: #112B3C;
+}
+
+.artistCard.active {
+  	background-color: #112B3C;
+}
+
+.artistImage {
+  	width: 100px;
+  	height: 100px;
+  	border-radius: 50%;
+  	object-fit: cover;
+  	border: 3px solid white;
+  	margin-bottom: 8px;
+}
+
+/* Artist Details */
+.details {
+  	background-color: white;
+  	padding: 20px;
+  	margin-top: 30px;
+}
+
+.details h2 {
+	text-align: center;
+  	margin-top: 0;
+  	color: black;
+}
+
+.details h3 {
+	text-align: center;
+  	margin-top: 0;
+  	color: black;
+  	font-style: Italic;
+}
+
+.details p {
+	text-align: justify;
+  	margin: 8px 0;
+  	line-height: 1.5;
+}
+
+/* Star */
+.star {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ccc;
+  margin-left: 10px;
+}
+
+.star.filled {
+  color: orange;
+}

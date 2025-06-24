@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+/* Global */
+body {
+  	margin: 0;
+  	font-family: Arial, sans-serif;
+  	background-color: white;
+  	color: #333;
+}
+
+.hidden {
+  	display: none;
+}
+
+/* Header */
+.header {
+  	background-color: #f2f2f2;
+  	color: black;
+  	padding: 15px 25px;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+}
+
+.header .title {
+  	font-size: 20px;
+}
+
+.header .menuButton button {
+  	margin-left: 10px;
+  	padding: 8px 16px;
+  	background-color: #f2f2f2;
+  	color: #444;
+  	border: none;
+  	border-radius: 6px;
+  	cursor: pointer;
+}
+
+.header .menuButton button:hover {
+  	background-color: #205375;
+  	color: white;
+}
+
+/* Content */
+.loginContent {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: calc(100vh - 80px);
+  	background-color: white;
+}
+.loginBox {
+  	background-color: white;
+  	padding: 40px 40px 30px;
+  	border-radius: 12px;
+	width: 100%;
+  	max-width: 400px;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+/* Search Bar */
+.searchBar {
+	position: relative;
+  	margin-bottom: 20px;
+}
+
+.searchBar input {
+  	width: 100%;
+  	padding: 10px 14px;
+  	font-size: 14px;
+  	border: 2px solid #ccc;
+  	border-radius: 6px;
+  	outline: none;
+  	box-sizing: border-box;
+  	transition: border-color 0.2s ease;
+}
+
+.searchBar input:focus {
+  border-color: black;
+}
+
+/* Error */
+input.error {
+  	border: 2px solid #c90a0a;
+}
+
+.warningIcon {
+  position: absolute;
+  right: 12px;
+  top: 42%;
+  transform: translateY(-50%);
+  height: 18px;
+}
+
+/* Error Text */
+.errorText {
+  font-size: 13px;
+  color: #c90a0a;
+  margin-top: 5px;
+  margin-left: 4px;
+}
+
+.error {
+  color:  #c90a0a;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Submit Button */
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton button {
+  padding: 10px 30px;
+  font-size: 14px;
+  background-color: #205375;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.submitButton button:hover {
+  background-color: #173c56;
+}
+
+.switchForm {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: black;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+
