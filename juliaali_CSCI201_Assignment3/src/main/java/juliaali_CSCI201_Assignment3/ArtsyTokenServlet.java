@@ -12,8 +12,8 @@ import com.google.gson.JsonObject;
 public class ArtsyTokenServlet extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 	
-	private static final String clientID = "178f0279e2dd41934733";
-	private static final String clientSecret = "120fcef6524f9c95060a77abf1f393db";
+	private static final String clientID = "111";
+	private static final String clientSecret = "222";
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("application/json");
